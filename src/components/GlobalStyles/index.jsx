@@ -5,13 +5,10 @@ import GandhiSansRegular from './fonts/GandhiSans-Regular.otf';
 
 
 const GlobalStyles = createGlobalStyle`
-
 @font-face {
   font-family: 'GandhiSansRegular';
   src: local("Gandhi Sans Regular"), local("GandhiSansRegular"), url(${GandhiSansRegular}) ;
 }
-
-
 @font-face {
   font-family: 'GandhiSansBold';
   src: local("Gandhi Sans Bold"), local("GandhiSansBold"), url(${GandhiSansBold}) ;
@@ -20,6 +17,7 @@ const GlobalStyles = createGlobalStyle`
 html {
     line-height: 1.15; 
     -webkit-text-size-adjust: 100%; 
+    font-family: 'GandhiSansRegular', sans-serif;
   }
   body {
     margin: 0;
@@ -97,6 +95,7 @@ html {
   [type="reset"],
   [type="submit"] {
     -webkit-appearance: button;
+    appearance: button;
   }
   button::-moz-focus-inner,
   [type="button"]::-moz-focus-inner,
@@ -138,7 +137,8 @@ html {
     height: auto;
   }
   [type="search"] {
-    -webkit-appearance: textfield; 
+    -webkit-appearance: textfield;
+    appearance: textfield;
     outline-offset: -2px; 
   }
   [type="search"]::-webkit-search-decoration {

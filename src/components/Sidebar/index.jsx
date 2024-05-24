@@ -15,11 +15,20 @@ const Sidebar = () => {
     <aside>
       <nav>
         <StyledList>
-          <ItemNav activeIcon="/icons/home-ativo.png" inactiveIcon="" active={true}>
+          <ItemNav activeIcon="./icons/home-ativo.png" inactiveIcon="/icons/home-inativo.png" active={true}>
             Início
           </ItemNav>
-          <ItemNav activeIon="/icons/mais-vistas-ativo.png" inactiveIcon="">
+
+          <ItemNav activeIon="/icons/mais-vistas-ativo.png" inactiveIcon="/icons/mais-curtidas-inativo.png" >
             Mais vistas
+          </ItemNav>
+
+          <ItemNav activeIon="/icons/novas-ativo.png" inactiveIcon="/icons/novas-inativo.png">
+            Novas
+          </ItemNav>
+
+          <ItemNav activeIon="/icons/surpreenda-me-ativo.png" inactiveIcon="/icons/surpreenda-me-inativo.png">
+            Surpreenda-me
           </ItemNav>
         </StyledList>
       </nav>
